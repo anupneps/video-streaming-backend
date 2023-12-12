@@ -1,0 +1,20 @@
+{
+  "name": "video_streaming_backend",
+  "version": "1.0.0",
+  "description": "backend services for streaming videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JS",
+    "Node",
+    "API",
+    "Backend"
+  ],
+  "author": "Anup",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
