@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
@@ -23,3 +24,5 @@ app.use(cookieParser());
 
 
 export default app;
+=======
+>>>>>>> parent of 62e273c (connected to MongoDB)

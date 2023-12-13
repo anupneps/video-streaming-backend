@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import dotenv from 'dotenv';
 import connectToDb from './db/connectToDb.js';
 
@@ -18,3 +19,5 @@ connectToDb()
     })
 
 
+=======
+>>>>>>> parent of 62e273c (connected to MongoDB)
