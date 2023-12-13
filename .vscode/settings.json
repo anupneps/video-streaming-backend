@@ -1,6 +1,0 @@
-{
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",
-    "terminal.integrated.tabs.defaultIcon": "device-desktop",
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font, monospace"
-}
