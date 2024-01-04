@@ -121,3 +121,6 @@ dist
 .vscode/
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
+
+# REst client
+REST/

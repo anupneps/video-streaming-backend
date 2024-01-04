@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
@@ -19,10 +18,16 @@ app.use(express.urlencoded({
 }));
 
 app.use(express.static('public'));
-
 app.use(cookieParser());
+app.get("/hello", (req, res)=> {
+    res.send("Welcome !!")
+})
 
+//routes import
+
+import userRouter from './routes/users.routes.js'
+
+//routes declaration
+app.use("/api/v1/users", userRouter)
 
 export default app;
-=======
->>>>>>> parent of 62e273c (connected to MongoDB)

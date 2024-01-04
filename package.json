@@ -1,13 +1,9 @@
 {
-<<<<<<< HEAD
   "type": "module",
-=======
->>>>>>> parent of 62e273c (connected to MongoDB)
   "name": "video_streaming_backend",
   "version": "1.0.0",
   "description": "backend services for streaming videos",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
@@ -22,7 +18,6 @@
   "devDependencies": {
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1"
-<<<<<<< HEAD
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -36,7 +31,5 @@
     "mongoose": "^8.0.3",
     "mongoose-aggregate-paginate-v2": "^1.0.6",
     "multer": "^1.4.5-lts.1"
-=======
->>>>>>> parent of 62e273c (connected to MongoDB)
   }
 }

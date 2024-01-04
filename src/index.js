@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 import dotenv from 'dotenv';
 import connectToDb from './db/connectToDb.js';
+import app from './app.js'
 
 dotenv.config({ path: './.env' });
 
@@ -19,5 +19,3 @@ connectToDb()
     })
 
 
-=======
->>>>>>> parent of 62e273c (connected to MongoDB)
