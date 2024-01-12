@@ -48,7 +48,8 @@ const userSchema = new Schema({
 },
     {
         timestamps: true
-    })
+    }
+)
 
 // Note: call back within .pre middleware using fn() instead of arrow function,
 // reason: to access "this", which is not possible with arrow functon
