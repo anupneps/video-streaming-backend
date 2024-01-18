@@ -84,13 +84,15 @@ const loginUser = asyncHandler(async (req, res) => {
         - if user exists, then verify password [password need to be encrypted to compare the hashes]
         - generate and return accesstoken and refresh token to user
         - send secure cookies 
-        - send success response
+        - send success responsey
     */
     const { username, email, password } = req.body
+    
     console.log(email)
+    
     if (!(username || email)) throw new ApiError(400, "Username or Email is required !")
 
-    const existingUser = await User.findOne({ $or: [username, email] })
+    const existingUser = await User.findOne({ $or: [{username}, {email}] })
 
     if (!existingUser) throw new ApiError(400, "User doesnot exists !")
 
@@ -99,6 +101,9 @@ const loginUser = asyncHandler(async (req, res) => {
     if (!isPasswordValid) throw new ApiError(401, "Password incorrect !")
 
     const { accessToken, refreshToken } = await generateAccesssAndRefreshTokens(existingUser._id)
+
+    console.log("accessToken : ", accessToken)
+    console.log("refreshToken : ", refreshToken)
 
     const loggedInUser = await User.findById(existingUser._id).select("-password -refreshToken")
 
